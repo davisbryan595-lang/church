@@ -1,0 +1,94 @@
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { Card } from "@/components/ui/card"
+
+export default function About() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navigation />
+
+      <main className="pt-32 pb-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <h1 className="text-5xl font-bold text-primary mb-12 text-center">Welcome to New Mt Calvary</h1>
+
+          {/* Main Content */}
+          <div className="prose prose-lg max-w-none dark:prose-invert mb-16">
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-primary mb-6">Our History</h2>
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                New Mt Calvary Missionary Baptist Church is a cherished spiritual home in the heart of Lake, Scott
+                County, Mississippi. For generations, our church has been a beacon of faith, serving as a sanctuary
+                where families gather to praise God, worship in spirit, and study His Word.
+              </p>
+              <p className="text-foreground/80 leading-relaxed">
+                Founded on principles of faith, community, and service, our small rural church has grown into a vibrant
+                congregation that continues to impact lives through spiritual guidance and Christian fellowship.
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-primary mb-6">Our Mission</h2>
+              <p className="text-foreground/80 leading-relaxed">
+                Our mission is to provide a space for praise and worship, to teach God's Word with authenticity and
+                compassion, and to build a community where faith strengthens bonds and transforms lives. We believe in
+                the power of unity—"we're in this thing together"—as we walk the path of righteousness.
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-primary mb-6">Community Involvement</h2>
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                At New Mt Calvary, we are committed to serving our community beyond the walls of our church. We
+                participate in local outreach programs, support those in need, and foster connections that strengthen
+                the fabric of our society.
+              </p>
+              <p className="text-foreground/80 leading-relaxed">
+                Whether through Bible studies, prayer circles, or community service, we strive to live out our faith and
+                make a positive difference in the lives of those around us.
+              </p>
+            </section>
+          </div>
+
+          {/* Photo Grid */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-primary mb-8 text-center">Our Community</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="overflow-hidden">
+                <img src="/church-congregation-worshipping.jpg" alt="Church congregation" className="w-full h-64 object-cover" />
+              </Card>
+              <Card className="overflow-hidden">
+                <img src="/mississippi-lake-landscape.jpg" alt="Lake view" className="w-full h-64 object-cover" />
+              </Card>
+              <Card className="overflow-hidden">
+                <img src="/bible-study-group.jpg" alt="Bible study" className="w-full h-64 object-cover" />
+              </Card>
+            </div>
+          </section>
+
+          {/* Pastor Bio */}
+          <section className="bg-muted/50 rounded-lg p-8">
+            <h2 className="text-3xl font-bold text-primary mb-6">Leadership</h2>
+            <Card className="p-8">
+              <div className="text-center mb-6">
+                <img
+                  src="/pastor-portrait.jpg"
+                  alt="Pastor"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h3 className="text-2xl font-bold text-foreground">Pastor</h3>
+                <p className="text-foreground/70">Spiritual Leader</p>
+              </div>
+              <p className="text-foreground/80 leading-relaxed text-center">
+                Our pastor brings years of faith, wisdom, and dedication to guiding our congregation in spiritual growth
+                and biblical understanding. They are committed to serving with compassion and leading by example.
+              </p>
+            </Card>
+          </section>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
