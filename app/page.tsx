@@ -15,7 +15,7 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20">
+      <section className="relative min-h-screen pt-32 pb-20">
         <HeroCarousel />
 
         {/* Hero Content Overlay */}

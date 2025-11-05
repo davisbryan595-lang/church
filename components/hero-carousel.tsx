@@ -44,7 +44,7 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-screen overflow-hidden group">
+    <div className="relative w-full h-full overflow-hidden group">
       {/* Carousel Images */}
       {HERO_IMAGES.map((image, index) => (
         <div

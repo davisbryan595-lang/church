@@ -128,3 +128,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Slogan marquee animation */
+.slogan-marquee { overflow: hidden; }
+.slogan-track { display: flex; width: max-content; animation: slogan-scroll 30s linear infinite; }
+.slogan-sequence { display: flex; align-items: center; gap: 2.5rem; }
+@keyframes slogan-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
