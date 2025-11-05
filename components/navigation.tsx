@@ -26,8 +26,8 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-              <span className="text-white font-bold text-lg">✦</span>
+            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center" aria-hidden="true">
+              <span className="text-white font-bold text-lg" aria-hidden="true">✝</span>
             </div>
             <span className="hidden sm:inline text-lg font-bold text-primary">New Mt Calvary MBC</span>
             <span className="sm:hidden text-lg font-bold text-primary">NMCMBC</span>
