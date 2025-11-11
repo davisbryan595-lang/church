@@ -86,12 +86,12 @@ export function GalleryGrid() {
           <button
             key={index}
             onClick={() => setSelectedImage(image)}
-            className="relative overflow-hidden rounded-lg h-64 md:h-72 group cursor-pointer"
+            className="relative overflow-hidden rounded-lg h-64 md:h-72 group cursor-pointer bg-muted"
           >
             <img
               src={image.url || "/placeholder.svg"}
               alt={image.alt}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
               <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
