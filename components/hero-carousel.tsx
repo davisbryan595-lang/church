@@ -36,19 +36,15 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-full overflow-hidden group">
+    <div className="relative w-full h-[85vh] md:h-[95vh] overflow-hidden group">
       {/* Carousel Images */}
       {HERO_IMAGES.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 bg-center bg-no-repeat bg-contain transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
-          style={{
-            backgroundImage: `url("${image.url}")`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
+          style={{ backgroundImage: `url("${image.url}")` }}
         />
       ))}
 
