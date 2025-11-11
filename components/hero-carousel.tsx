@@ -36,7 +36,7 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-[75vh] md:h-[85vh] -mt-8 md:-mt-6 overflow-hidden group">
+    <div className="relative w-full h-[90vh] md:h-[95vh] lg:h-[calc(100vh-140px)] -mt-8 md:-mt-6 overflow-hidden group">
       {/* Carousel Images */}
       {HERO_IMAGES.map((image, index) => (
         <div
@@ -54,6 +54,9 @@ export function HeroCarousel() {
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+
+      {/* Blue Tint Overlay */}
+      <div className="absolute inset-0 bg-blue-500/5" />
 
       {/* Left Arrow */}
       <Button

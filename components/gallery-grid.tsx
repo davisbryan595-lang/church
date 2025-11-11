@@ -5,44 +5,74 @@ import { X } from "lucide-react"
 
 const GALLERY_IMAGES = [
   {
-    url: "/church-congregation-singing-worship.jpg",
-    alt: "Congregation singing in worship",
-    category: "Worship",
+    url: "/gallery/IMG-20251112-WA0002.jpg",
+    alt: "Gallery photo 1",
+    category: "Church",
   },
   {
-    url: "/community-service-volunteering-mission.jpg",
-    alt: "Community service and outreach",
-    category: "Community",
+    url: "/gallery/IMG-20251112-WA0003.jpg",
+    alt: "Gallery photo 2",
+    category: "Church",
   },
   {
-    url: "/sunday-school-children-learning-faith.jpg",
-    alt: "Sunday school and children's ministry",
-    category: "Ministry",
+    url: "/gallery/IMG-20251112-WA0004.jpg",
+    alt: "Gallery photo 3",
+    category: "Church",
   },
   {
-    url: "/prayer-meeting-fellowship-church.jpg",
-    alt: "Prayer meeting and fellowship",
-    category: "Prayer",
+    url: "/gallery/IMG-20251112-WA0005.jpg",
+    alt: "Gallery photo 4",
+    category: "Church",
   },
   {
-    url: "/youth-group-gathering-young-adults.jpg",
-    alt: "Youth group gathering",
-    category: "Youth",
+    url: "/gallery/IMG-20251112-WA0006.jpg",
+    alt: "Gallery photo 5",
+    category: "Church",
   },
   {
-    url: "/special-events-celebration-church-gathering.jpg",
-    alt: "Special events and celebrations",
-    category: "Events",
+    url: "/gallery/IMG-20251112-WA0007.jpg",
+    alt: "Gallery photo 6",
+    category: "Church",
   },
   {
-    url: "/baptism-spiritual-milestone-water.jpg",
-    alt: "Baptism and spiritual milestones",
-    category: "Sacraments",
+    url: "/gallery/IMG-20251112-WA0008.jpg",
+    alt: "Gallery photo 7",
+    category: "Church",
   },
   {
-    url: "/church-interior-sanctuary-architecture.jpg",
-    alt: "Church interior and sanctuary",
-    category: "Facilities",
+    url: "/gallery/IMG-20251112-WA0009.jpg",
+    alt: "Gallery photo 8",
+    category: "Church",
+  },
+  {
+    url: "/gallery/IMG-20251112-WA0010.jpg",
+    alt: "Gallery photo 9",
+    category: "Church",
+  },
+  {
+    url: "/gallery/IMG-20251112-WA0011.jpg",
+    alt: "Gallery photo 10",
+    category: "Church",
+  },
+  {
+    url: "/gallery/IMG-20251112-WA0012.jpg",
+    alt: "Gallery photo 11",
+    category: "Church",
+  },
+  {
+    url: "/gallery/IMG-20251112-WA0013.jpg",
+    alt: "Gallery photo 12",
+    category: "Church",
+  },
+  {
+    url: "/gallery/IMG-20251112-WA0015.jpg",
+    alt: "Gallery photo 13",
+    category: "Church",
+  },
+  {
+    url: "/gallery/IMG-20251112-WA0016.jpg",
+    alt: "Gallery photo 14",
+    category: "Church",
   },
 ]
 
@@ -56,12 +86,12 @@ export function GalleryGrid() {
           <button
             key={index}
             onClick={() => setSelectedImage(image)}
-            className="relative overflow-hidden rounded-lg h-64 md:h-72 group cursor-pointer"
+            className="relative overflow-hidden rounded-lg h-64 md:h-72 group cursor-pointer bg-muted"
           >
             <img
               src={image.url || "/placeholder.svg"}
               alt={image.alt}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
               <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
