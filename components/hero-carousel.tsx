@@ -46,7 +46,7 @@ export function HeroCarousel() {
           <img
             src={encodeURI(image.url)}
             alt={image.alt}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-top"
             decoding="async"
           />
         </div>
