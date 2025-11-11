@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const HERO_IMAGES = [
   { url: "/carousel/WhatsApp Image 2025-11-12 at 00.42.43_0e5bf94e.jpg", alt: "Carousel image 1" },
-  { url: "/carousel/WhatsApp Image 2025-11-12 at 00.47.06_396d79cf.jpg", alt: "Carousel image 2" },
+  { url: "/2.jpg", alt: "Carousel image 2" },
   { url: "/carousel/WhatsApp Image 2025-11-12 at 00.47.06_631bb7c7.jpg", alt: "Carousel image 3" },
   { url: "/carousel/WhatsApp Image 2025-11-12 at 00.47.06_ce9e47b0.jpg", alt: "Carousel image 4" },
 ]
