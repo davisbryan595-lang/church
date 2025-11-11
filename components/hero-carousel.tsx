@@ -36,7 +36,7 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-[75vh] md:h-[85vh] -mt-8 md:-mt-6 overflow-hidden group">
+    <div className="relative w-full h-[90vh] md:h-[95vh] lg:h-[calc(100vh-140px)] -mt-8 md:-mt-6 overflow-hidden group">
       {/* Carousel Images */}
       {HERO_IMAGES.map((image, index) => (
         <div
