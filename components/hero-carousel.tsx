@@ -41,11 +41,17 @@ export function HeroCarousel() {
       {HERO_IMAGES.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-center bg-no-repeat bg-contain transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
-          style={{ backgroundImage: `url("${image.url}")` }}
-        />
+        >
+          <img
+            src={encodeURI(image.url)}
+            alt={image.alt}
+            className="max-h-full max-w-full object-contain object-center"
+            decoding="async"
+          />
+        </div>
       ))}
 
       {/* Gradient Overlay */}
