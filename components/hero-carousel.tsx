@@ -41,9 +41,7 @@ export function HeroCarousel() {
       {HERO_IMAGES.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ease-in-out transform ${index === currentIndex ? "opacity-100" : "opacity-0"} ${index > 0 ? "translate-y-6 md:translate-y-12" : "translate-y-0"}`}
         >
           <img
             src={encodeURI(image.url)}
