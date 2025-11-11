@@ -45,7 +45,7 @@ export function HeroCarousel() {
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{
-            backgroundImage: `url(${image.url})`,
+            backgroundImage: `url("${image.url}")`,
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
