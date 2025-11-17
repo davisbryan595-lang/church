@@ -7,11 +7,18 @@ import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setIsDark(isDarkMode)
+    const html = document.documentElement
+    const isDarkMode = html.classList.contains("dark")
+
+    if (!isDarkMode) {
+      html.classList.add("dark")
+    }
+    setIsDark(true)
+    setIsMounted(true)
   }, [])
 
   const toggleDarkMode = () => {
@@ -51,14 +58,14 @@ export function Navigation() {
               Contact
             </Link>
             <Button onClick={toggleDarkMode} variant="ghost" size="icon">
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {isMounted && (isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />)}
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
             <Button onClick={toggleDarkMode} variant="ghost" size="icon">
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {isMounted && (isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />)}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
