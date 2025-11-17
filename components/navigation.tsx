@@ -58,14 +58,14 @@ export function Navigation() {
               Contact
             </Link>
             <Button onClick={toggleDarkMode} variant="ghost" size="icon">
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {isMounted && (isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />)}
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
             <Button onClick={toggleDarkMode} variant="ghost" size="icon">
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              {isMounted && (isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />)}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
