@@ -134,9 +134,9 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Address</h3>
                     <p className="text-foreground/70">
-                      Lake, Scott County
+                      1000 new mount calvary rd Lake ms 39092
                       <br />
-                      Mississippi
+                      
                     </p>
                   </div>
                 </div>

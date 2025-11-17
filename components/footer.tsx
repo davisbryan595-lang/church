@@ -25,7 +25,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>Lake, Scott County, Mississippi</span>
+                <span>1000 new mount calvary rd Lake ms 39092</span>
               </div>
             </div>
           </div>
