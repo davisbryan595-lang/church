@@ -37,11 +37,10 @@ export default function About() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-primary mb-6">Community Involvement</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">Action Statement</h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                At New Mt Calvary, we are committed to serving our community beyond the walls of our church. We
-                participate in local outreach programs, support those in need, and foster connections that strengthen
-                the fabric of our society.
+                We will diligently pursue the completion of our mission by establishing a robust, steadfast, and well-informed foundation within our premises. As we strive to become influential members of our community and society, we recognize that this endeavor presents significant challenges. However, we are confident that through prayer, discipline, and unwavering determination, we can achieve our objectives.
+                Philippians 4:13 underscores our unwavering belief that we possess the capacity to accomplish all things.
               </p>
               <p className="text-foreground/80 leading-relaxed">
                 Whether through Bible studies, prayer circles, or community service, we strive to live out our faith and
