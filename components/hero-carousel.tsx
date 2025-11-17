@@ -8,7 +8,7 @@ const HERO_IMAGES = [
   { url: "/carousel/WhatsApp Image 2025-11-12 at 00.42.43_0e5bf94e.jpg", alt: "Carousel image 1" },
   { url: "/carousel/2.jpg", alt: "Carousel image 2" },
   { url: "/carousel/3.jpg", alt: "Carousel image 3" },
-  { url: "https://cdn.builder.io/api/v1/image/assets/5c758e804cba4fa3a488e9088887877b/f4bbb2450103498fb2465dd675d5564a", alt: "Carousel image 4" },
+  { url: "/carousel/4.jpg", alt: "Carousel image 4" },
 ]
 
 export function HeroCarousel() {
