@@ -46,7 +46,7 @@ export function HeroCarousel() {
           {index === 3 ? (
             <div className="relative w-full h-full flex items-center justify-center">
               <img
-                src={encodeURI(image.url)}
+                src={image.url.startsWith("http") ? image.url : encodeURI(image.url)}
                 alt={image.alt}
                 className="max-w-[85%] max-h-[85%] object-contain object-center"
                 decoding="async"
@@ -54,7 +54,7 @@ export function HeroCarousel() {
             </div>
           ) : (
             <img
-              src={encodeURI(image.url)}
+              src={image.url.startsWith("http") ? image.url : encodeURI(image.url)}
               alt={image.alt}
               className="w-full h-full object-cover object-center"
               decoding="async"
