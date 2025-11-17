@@ -7,11 +7,16 @@ import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setIsDark(isDarkMode)
+    const html = document.documentElement
+    const isDarkMode = html.classList.contains("dark")
+
+    if (!isDarkMode) {
+      html.classList.add("dark")
+    }
+    setIsDark(true)
   }, [])
 
   const toggleDarkMode = () => {
