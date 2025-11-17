@@ -166,7 +166,7 @@ export default function Contact() {
               {/* Map */}
               <Card className="p-6 overflow-hidden h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.4233123456!2d-90.7!3d32.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626f5b5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sLake%2C%20Scott%20County%2C%20MS!5e0!3m2!1sen!2sus!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.8!2d-90.234!3d32.234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626e5f5f5f5f5f5%3A0x1f5f5f5f5f5f5f5f!2s1000%20New%20Mount%20Calvary%20Rd%2C%20Lake%2C%20MS%2039092!5e0!3m2!1sen!2sus!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
