@@ -15,9 +15,11 @@ export default function Home() {
 
       {/* Hero Section - Minimal */}
       <section
-        className="relative bg-gradient-to-b from-primary to-primary/90 text-primary-foreground pt-32 pb-32 bg-cover bg-center bg-no-repeat"
+        className="relative text-primary-foreground bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/church-interior-sanctuary-architecture.jpg')",
+          backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2Fe956acbb04e54fb896c83542bdb88b2d%2Fb7b5b1337b31417f9d70063755718858?format=webp&width=800&height=1200')",
+          aspectRatio: "16 / 9",
+          minHeight: "500px",
         }}
       >
         {/* Overlay */}
