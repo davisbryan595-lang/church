@@ -23,8 +23,8 @@ export default function Home() {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div className="absolute inset-0 bg-black/55"></div>
+        <div className="h-full flex items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">New Mt Calvary MBC</h1>
           <p className="text-xl italic text-white/90 mb-6 drop-shadow-md">We're in this thing together</p>
           <p className="text-2xl font-semibold text-white/95 mb-8 drop-shadow-md">
