@@ -1,4 +1,4 @@
-import { Mail, MapPin, Facebook, Youtube, Twitter, Instagram, TikTok } from "lucide-react"
+import { Mail, MapPin, Facebook, Youtube, Twitter, Instagram } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -46,8 +46,8 @@ export function Footer() {
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
-                <TikTok className="w-5 h-5" />
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition text-sm font-semibold">
+                TikTok
               </a>
             </div>
           </div>
