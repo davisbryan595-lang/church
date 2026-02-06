@@ -4,95 +4,124 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import dynamic from "next/dynamic"
-const HeroCarousel = dynamic(() => import("@/components/hero-carousel").then(mod => mod.HeroCarousel), { ssr: false })
-import { SloganSlider } from "@/components/slogan-slider"
-import { MapPin, Clock, BookOpen, Users } from "lucide-react"
+import { MapPin, Clock, BookOpen, Users, FileText } from "lucide-react"
 import Link from "next/link"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative h-screen pt-32 pb-20">
-        <HeroCarousel />
-
-        {/* Hero Content Overlay */}
-        <div className="absolute inset-0 pt-32 pb-20 flex items-center justify-center">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">New Mt Calvary MBC</h1>
-            <p className="text-xl italic text-white/90 mb-6 drop-shadow-md">We're in this thing together</p>
-            <p className="text-2xl font-semibold text-white/95 mb-8 drop-shadow-md">
-              Praise, Worship and Teaching God's Word
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 shadow-lg">
-                <Link href="/services">Join Us Sunday</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                className="bg-white/20 text-white hover:bg-white/30 border border-white shadow-lg"
+      {/* Hero Section - Minimal */}
+      <section className="relative bg-gradient-to-b from-primary to-primary/90 text-primary-foreground pt-32 pb-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Hello</h1>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-8">The Church</h2>
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-12">Welcome to New Mt Calvary MBC</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 shadow-lg">
+              <Link href="/services">Join Us Sunday</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              className="bg-white/20 text-white hover:bg-white/30 border border-white shadow-lg"
+            >
+              <a
+                href="https://www.google.com/maps/place/1000+New+Mt+Calvary+Rd,+Lake,+MS+39092"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a
-                  href="https://www.google.com/maps/search/Lake,+Scott+County,+Mississippi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Get Directions
-                </a>
-              </Button>
-            </div>
+                Get Directions
+              </a>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Slogan Slider Banner */}
-      <SloganSlider />
-
-      {/* Welcome Section - 3 Column Grid */}
+      {/* Quick Access - 4 Cards */}
       <section className="py-20 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Mission Card */}
-            <Card className="p-8 hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                <BookOpen className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
-              <p className="text-foreground/80">
-                Praise, Worship and Teaching God's Word with devotion and reverence to serve our community.
-              </p>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Mission Modal */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <Card className="p-6 cursor-pointer hover:shadow-lg transition">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                    <BookOpen className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-primary mb-2">Our Mission</h3>
+                  <p className="text-sm text-foreground/70">Learn about our church's mission and values</p>
+                </Card>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl">
+                <DialogHeader>
+                  <DialogTitle>Our Mission</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-4">
+                  <p className="text-foreground/80">
+                    Our mission is to provide a space for praise and worship, to teach God's Word with authenticity and
+                    compassion, and to build a community where faith strengthens bonds and transforms lives.
+                  </p>
+                  <p className="text-foreground/80">
+                    We believe in the power of unity—"we're in this thing together"—as we walk the path of
+                    righteousness.
+                  </p>
+                </div>
+              </DialogContent>
+            </Dialog>
 
-            {/* Community Card */}
-            <Card className="p-8 hover:shadow-lg transition">
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-accent mb-4">Community Focus</h3>
-              <p className="text-foreground/80">
-                "We're in this thing together" - our church is built on unity, faith, and serving one another in love.
-              </p>
-            </Card>
+            {/* Community Modal */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <Card className="p-6 cursor-pointer hover:shadow-lg transition">
+                  <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-accent mb-2">Community Focus</h3>
+                  <p className="text-sm text-foreground/70">Discover our commitment to community service</p>
+                </Card>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl">
+                <DialogHeader>
+                  <DialogTitle>Community Focus</DialogTitle>
+                </DialogHeader>
+                <div className="space-y-4">
+                  <p className="text-foreground/80">
+                    "We're in this thing together" - our church is built on unity, faith, and serving one another in
+                    love.
+                  </p>
+                  <p className="text-foreground/80">
+                    Whether through Bible studies, prayer circles, or community service, we strive to live out our faith
+                    and make a positive difference in the lives of those around us.
+                  </p>
+                </div>
+              </DialogContent>
+            </Dialog>
 
-            {/* Location Card */}
-            <Card className="p-8 hover:shadow-lg transition">
+            {/* Gallery */}
+            <Card className="p-6 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-white" />
+                <FileText className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">Location</h3>
-              <p className="text-foreground/80 mb-4">Lake, Scott County, Mississippi</p>
-              <a
-                href="https://www.google.com/maps/search/Lake,+Scott+County,+Mississippi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline font-semibold"
-              >
-                View on Map →
-              </a>
+              <h3 className="text-lg font-bold text-secondary mb-2">Gallery</h3>
+              <p className="text-sm text-foreground/70 mb-4">View our church photos and memories</p>
+              <Button asChild variant="ghost" size="sm">
+                <Link href="/gallery">View Gallery</Link>
+              </Button>
+            </Card>
+
+            {/* Sermons & Events */}
+            <Card className="p-6 hover:shadow-lg transition">
+              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Sermons & Events</h3>
+              <p className="text-sm text-foreground/70 mb-4">Access sermons and live event info</p>
+              <Button asChild variant="ghost" size="sm">
+                <Link href="/sermons">Learn More</Link>
+              </Button>
             </Card>
           </div>
         </div>
@@ -101,12 +130,12 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-primary mb-4 text-center">Our Services</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4 text-center">Service Times</h2>
           <p className="text-center text-foreground/70 mb-12 max-w-2xl mx-auto">
             Join us for worship and spiritual growth throughout the week
           </p>
 
-          <div className="space-y-4 max-w-2xl mx-auto">
+          <div className="space-y-4 max-w-2xl mx-auto mb-12">
             {/* Wednesday Service */}
             <Card className="p-6 hover:shadow-md transition border-l-4 border-l-accent">
               <div className="flex items-start gap-4">
@@ -132,7 +161,7 @@ export default function Home() {
                   <p className="text-foreground/60 text-sm mt-2">Fellowship and spiritual education for all ages</p>
                 </div>
                 <Button variant="outline" size="sm">
-                  Add to Calendar
+                  Learn More
                 </Button>
               </div>
             </Card>
@@ -147,15 +176,21 @@ export default function Home() {
                   <p className="text-foreground/60 text-sm mt-2">Join us for praise, worship and teaching God's Word</p>
                 </div>
                 <Button variant="outline" size="sm">
-                  Add to Calendar
+                  Join Us
                 </Button>
               </div>
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <Button asChild variant="outline" size="lg">
+              <Link href="/sunday-school">Sunday School Page</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/bible-study">Bible Study Page</Link>
+            </Button>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <Link href="/services">View Full Schedule</Link>
+              <Link href="/services">Full Schedule</Link>
             </Button>
           </div>
         </div>
