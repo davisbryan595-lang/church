@@ -19,8 +19,8 @@ export function Footer() {
             <div className="space-y-2 text-primary-foreground/90">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:NewMtCalvary@myyahoo.com" className="hover:underline">
-                  NewMtCalvary@myyahoo.com
+                <a href="mailto:Newmtcalvary@newmtcalvary.com" className="hover:underline">
+                  Newmtcalvary@newmtcalvary.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
