@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card } from "@/components/ui/card"
-import { Facebook, Youtube, Twitter, Instagram, TikTok } from "lucide-react"
+import { Facebook, Youtube, Twitter, Instagram } from "lucide-react"
 
 export default function About() {
   return (
