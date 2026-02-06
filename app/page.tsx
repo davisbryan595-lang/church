@@ -23,9 +23,11 @@ export default function Home() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Hello</h1>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-8">The Church</h2>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-12">Welcome to New Mt Calvary MBC</p>
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">New Mt Calvary MBC</h1>
+          <p className="text-xl italic text-white/90 mb-6 drop-shadow-md">We're in this thing together</p>
+          <p className="text-2xl font-semibold text-white/95 mb-8 drop-shadow-md">
+            Praise, Worship and Teaching God's Word
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 shadow-lg">
               <Link href="/services">Join Us Sunday</Link>
