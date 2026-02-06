@@ -14,8 +14,15 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section - Minimal */}
-      <section className="relative bg-gradient-to-b from-primary to-primary/90 text-primary-foreground pt-32 pb-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section
+        className="relative bg-gradient-to-b from-primary to-primary/90 text-primary-foreground pt-32 pb-32 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/church-interior-sanctuary-architecture.jpg')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Hello</h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-8">The Church</h2>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-12">Welcome to New Mt Calvary MBC</p>
