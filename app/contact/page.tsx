@@ -120,8 +120,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:NewMtCalvary@myyahoo.com" className="text-primary hover:underline">
-                      NewMtCalvary@myyahoo.com
+                    <a href="mailto:Newmtcalvary@newmtcalvary.com" className="text-primary hover:underline">
+                      Newmtcalvary@newmtcalvary.com
                     </a>
                   </div>
                 </div>
@@ -134,9 +134,9 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Address</h3>
                     <p className="text-foreground/70">
-                      1000 new mount calvary rd Lake ms 39092
+                      1000 New Mt Calvary Rd
                       <br />
-                      
+                      Lake, Mississippi 39092
                     </p>
                   </div>
                 </div>

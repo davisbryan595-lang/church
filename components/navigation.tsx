@@ -51,6 +51,15 @@ export function Navigation() {
             <Link href="/services" className="text-foreground hover:text-primary transition">
               Services
             </Link>
+            <Link href="/sunday-school" className="text-foreground hover:text-primary transition">
+              Sunday School
+            </Link>
+            <Link href="/bible-study" className="text-foreground hover:text-primary transition">
+              Bible Study
+            </Link>
+            <Link href="/sermons" className="text-foreground hover:text-primary transition">
+              Sermons
+            </Link>
             <Link href="/gallery" className="text-foreground hover:text-primary transition">
               Gallery
             </Link>
@@ -84,6 +93,15 @@ export function Navigation() {
             </Link>
             <Link href="/services" className="block px-4 py-2 text-foreground hover:bg-muted rounded">
               Services
+            </Link>
+            <Link href="/sunday-school" className="block px-4 py-2 text-foreground hover:bg-muted rounded">
+              Sunday School
+            </Link>
+            <Link href="/bible-study" className="block px-4 py-2 text-foreground hover:bg-muted rounded">
+              Bible Study
+            </Link>
+            <Link href="/sermons" className="block px-4 py-2 text-foreground hover:bg-muted rounded">
+              Sermons
             </Link>
             <Link href="/gallery" className="block px-4 py-2 text-foreground hover:bg-muted rounded">
               Gallery

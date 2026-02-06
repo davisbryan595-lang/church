@@ -1,4 +1,4 @@
-import { Mail, MapPin, Facebook, Youtube } from "lucide-react"
+import { Mail, MapPin, Facebook, Youtube, Twitter, Instagram } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -19,13 +19,13 @@ export function Footer() {
             <div className="space-y-2 text-primary-foreground/90">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:NewMtCalvary@myyahoo.com" className="hover:underline">
-                  NewMtCalvary@myyahoo.com
+                <a href="mailto:Newmtcalvary@newmtcalvary.com" className="hover:underline">
+                  Newmtcalvary@newmtcalvary.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>1000 new mount calvary rd Lake ms 39092</span>
+                <span>1000 New Mt Calvary Rd, Lake, Mississippi 39092</span>
               </div>
             </div>
           </div>
@@ -34,11 +34,20 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:opacity-80 transition">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Youtube className="w-5 h-5" />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition text-sm font-semibold">
+                TikTok
               </a>
             </div>
           </div>
