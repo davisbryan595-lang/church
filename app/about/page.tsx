@@ -115,8 +115,8 @@ export default function About() {
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Instagram className="w-8 h-8" />
               </a>
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
-                <TikTok className="w-8 h-8" />
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition font-semibold text-sm">
+                TikTok
               </a>
             </div>
           </section>
