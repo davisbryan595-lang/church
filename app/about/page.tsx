@@ -81,7 +81,7 @@ export default function About() {
             <Card className="p-8">
               <div className="text-center mb-6">
                 <img
-                  src="/pastor-portrait.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe956acbb04e54fb896c83542bdb88b2d%2Fbf3cb25a5d8546af98e26713e25c16c7?format=webp&width=800&height=1200"
                   alt="Pastor Samuel Magee"
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
@@ -103,19 +103,19 @@ export default function About() {
               Stay connected with our church community on social media
             </p>
             <div className="flex justify-center gap-6">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://www.facebook.com/groups/1242166817210065/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Facebook className="w-8 h-8" />
               </a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://www.youtube.com/@NewMtCalvaryMBChurch" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Youtube className="w-8 h-8" />
               </a>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://x.com/MtNew59949" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Twitter className="w-8 h-8" />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://www.instagram.com/18086744854536" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Instagram className="w-8 h-8" />
               </a>
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition font-semibold text-sm">
+              <a href="https://www.tiktok.com/@newmtcalvarymbchurch" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition font-semibold text-sm">
                 TikTok
               </a>
             </div>

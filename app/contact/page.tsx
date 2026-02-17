@@ -29,11 +29,20 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     try {
-      // Mock submission - in production, this would send to your backend
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      setSubmitted(true)
-      setFormData({ name: "", email: "", message: "" })
-      setTimeout(() => setSubmitted(false), 3000)
+      const form = e.currentTarget
+      const data = new FormData(form)
+      data.append("access_key", "ee3e7505-7db6-4e4e-9825-cdf6b9e2a27b")
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data,
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+        setFormData({ name: "", email: "", message: "" })
+        setTimeout(() => setSubmitted(false), 3000)
+      }
     } catch (error) {
       console.error("Error submitting form:", error)
     }
@@ -57,6 +66,8 @@ export default function Contact() {
               <Card className="p-8">
                 <h2 className="text-2xl font-bold text-primary mb-6">Send us a Message</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  <input type="hidden" name="to_email" value="info@newmtcalvary.com" />
+                  <input type="hidden" name="subject" value="New Contact Form Submission" />
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       Name
@@ -120,8 +131,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:Newmtcalvary@newmtcalvary.com" className="text-primary hover:underline">
-                      Newmtcalvary@newmtcalvary.com
+                    <a href="mailto:info@newmtcalvary.com" className="text-primary hover:underline">
+                      info@newmtcalvary.com
                     </a>
                   </div>
                 </div>

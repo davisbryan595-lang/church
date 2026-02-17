@@ -19,8 +19,8 @@ export function Footer() {
             <div className="space-y-2 text-primary-foreground/90">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:Newmtcalvary@newmtcalvary.com" className="hover:underline">
-                  Newmtcalvary@newmtcalvary.com
+                <a href="mailto:info@newmtcalvary.com" className="hover:underline">
+                  info@newmtcalvary.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -34,19 +34,19 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://www.facebook.com/groups/1242166817210065/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://www.youtube.com/@NewMtCalvaryMBChurch" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Youtube className="w-5 h-5" />
               </a>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://x.com/MtNew59949" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
+              <a href="https://www.instagram.com/18086744854536" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition text-sm font-semibold">
+              <a href="https://www.tiktok.com/@newmtcalvarymbchurch" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition text-sm font-semibold">
                 TikTok
               </a>
             </div>
