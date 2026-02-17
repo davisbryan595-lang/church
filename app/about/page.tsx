@@ -81,7 +81,7 @@ export default function About() {
             <Card className="p-8">
               <div className="text-center mb-6">
                 <img
-                  src="/pastor-portrait.jpg"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe956acbb04e54fb896c83542bdb88b2d%2Fbf3cb25a5d8546af98e26713e25c16c7?format=webp&width=800&height=1200"
                   alt="Pastor Samuel Magee"
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
