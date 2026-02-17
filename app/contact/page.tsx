@@ -120,8 +120,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:Newmtcalvary@newmtcalvary.com" className="text-primary hover:underline">
-                      Newmtcalvary@newmtcalvary.com
+                    <a href="mailto:info@newmtcalvary.com" className="text-primary hover:underline">
+                      info@newmtcalvary.com
                     </a>
                   </div>
                 </div>
